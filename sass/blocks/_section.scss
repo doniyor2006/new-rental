@@ -1,0 +1,133 @@
+
+  .box__paragraph{
+    padding-right: 0;
+  }
+
+.container__second-part{
+    width: 1200px;
+// height: 500px;
+display: flex;
+background: #FFFFFF;
+border: 1.5px solid #E5E7EA;
+border-radius: 20px;
+margin-top: 150px;
+}
+.seecond_part-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+    margin-right: 60px;
+}
+.text-part{
+    font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+}
+.part-text{
+    max-width: 590px;
+}
+.text-2part{
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #555555;
+margin-bottom: 120px;
+}
+.end-box{
+    // position: relative;
+   width: 200px;
+height: 160px;
+background: #F5F5F5;
+border-radius: 16px;
+padding: 15px;
+}
+.text-end{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+.end-text{
+    font-weight: 500;
+font-size: 20px;
+line-height: 22px;
+margin-top: 60px;
+color: #000000;
+}
+.end-icon{
+    display: block;
+    text-align: right;
+    position: absolute;
+        right: 10.87%;
+    top: 13.54%;
+  }
+  .media{
+    margin-top: 30px;
+  }
+  .media2{
+    display: none;
+  }
+@media only screen and (max-width:780px){
+    .container__second-part{
+        width:100%;
+        margin: 0 auto;
+        height: 980px;
+margin-top: 100px;
+    }
+    .media{
+        display: none;
+    }
+   .part-text{
+    width:90%;
+    margin-bottom: 0;
+   }
+   .text-part{
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 39px;
+}
+.end-box{
+    width: 318px; 
+    margin: 0 auto;
+height: 160px;
+}
+.text-end{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.media2{
+    display: block;
+    position: absolute;
+width: 80px;
+// height: 80px;
+right: 0%;
+top:0%;
+border-top-right-radius:20px;
+}
+} 
+@media (min-width:780px) and (max-width:835px){
+    .container__second-part{
+        width:100%;
+        height: 478px;
+    }
+    .end-box{
+        width: 140px;
+    }
+    .part-text{
+        width:90%;
+    }
+    .text-2part{
+        margin-bottom: 25px;
+    }
+    .media{
+        width: 280px; 
+        height: 332px;
+        margin-top:144px;
+    }
+    .seecond_part-info{
+        margin-right: 20px;
+    }
+}
