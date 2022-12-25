@@ -3,4 +3,319 @@
   width: 100%;
   padding: 10px;
   margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#choseCar-section {
+  padding-bottom: 160px;
+}
+
+.chooseCar__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #000000;
+}
+
+.chooseCar__text {
+  margin: 10px 0 40px 0;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #555555;
+}
+
+.chooseCar__cars {
+  text-align: center;
+}
+
+.chooseCar__btnGroups {
+  margin-bottom: 24px;
+}
+
+.chooseCar__btn {
+  padding: 17px 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  border-radius: 100px;
+  border: 1.5px solid #E5E7EA;
+}
+
+.choseBtn__active {
+  color: #FFFFFF;
+  background: #299764;
+}
+
+.chooseCar__cards {
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chooseCar__itemas {
+  padding: 24px 30px;
+  background: #F5F5F5;
+  border-radius: 16px;
+  list-style: none;
+  text-align: left;
+}
+.chooseCar__itemas:hover {
+  background: #299764;
+  border-radius: 16px;
+  transition: background 0.7s;
+}
+.chooseCar__itemas:hover > * {
+  color: #FFFFFF;
+  transition: color 0.5s;
+}
+
+.choseCard__title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.choseCard__itemas__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555555;
+}
+
+.choseCard__img {
+  max-width: 378px;
+  margin: 16px 0;
+}
+.choseCard__img img {
+  width: 100%;
+}
+
+.choseCard__boxText {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 24px;
+}
+.choseCard__boxText__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.chooseCar__btnAll {
+  margin-top: 43px;
+  padding: 18px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #299764;
+  border-radius: 100px;
+  border: none;
+}
+
+@media screen and (max-width: 800px) {
+  .chooseCar__cards {
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .chooseCar__cards {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+}
+#fromGoogle-section {
+  padding: 100px 0 100px 0;
+  background-color: #F5F5F5;
+}
+
+.formGoogle {
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.formGoogle__left {
+  width: 40%;
+  padding: 70px;
+}
+
+.formGoogle__icon {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.formGoogle__title {
+  max-width: 320px;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.formGoogle__line {
+  max-width: 330px;
+  margin: 30px 0 30px 0;
+  width: 100%;
+  height: 2px;
+  display: block;
+  background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+}
+
+.formGoogle__text {
+  margin-bottom: 34px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+}
+
+.formGoogle__ins {
+  margin-top: 34px;
+  padding: 18px 30px;
+  border: 1px solid;
+  border-color: liner-gradient(230.93% 230.93% at 102.01% 2.03%, #F9ED32 0%, #EE2A7B 36%, #D22A8A 44%, #8B2AB2 60%, #1B2AF0 83%, #002AFF 88%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background: #FFFFFF;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.formGoogle__right {
+  width: 60%;
+  background: #299764;
+  min-height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.formGoogle__right__cardsWrap {
+  overflow-x: scroll;
+  padding: 40px;
+}
+
+.formGoogle__right__card {
+  display: flex;
+  padding-bottom: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  overflow-x: scroll;
+}
+.formGoogle__right__card::-webkit-scrollbar {
+  width: 2px;
+}
+.formGoogle__right__card::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+.formGoogle__right__card::-webkit-scrollbar-thumb {
+  background: white;
+  border-left: 7px solid white;
+  border-right: 7px solid white;
+  border-radius: 10px;
+}
+
+.formGoogle__right__iteam {
+  max-width: 420px;
+  width: 100%;
+  padding: 24px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  list-style: none;
+}
+
+.formGoogle__right__iteamHeader {
+  display: flex;
+}
+
+.formGoogle__right__iteamHeaderWrap {
+  margin-left: 12px;
+}
+
+.gogle {
+  margin-left: auto;
+}
+
+.formGoogle__right__iteamName {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.formGoogle__right__iteamEmail {
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+}
+
+.formGoogle__right__iteamMain > p {
+  max-width: 372px !important;
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.formGoogle__right__iteamMainLine {
+  margin: 25px 0 25px 0;
+}
+
+.formGoogle__right__iteamFooter {
+  display: flex;
+}
+.formGoogle__right__iteamFooter p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 800px) {
+  .formGoogle {
+    flex-direction: column;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .formGoogle__line {
+    display: none;
+  }
+  .formGoogle__left {
+    width: 100%;
+  }
+  .formGoogle__right {
+    width: 100%;
+  }
+  .formGoogle__left {
+    display: flex;
+  }
+}
+@media screen and (max-width: 576px) {
+  .formGoogle__line {
+    display: block;
+  }
+  .formGoogle__left {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,129 @@
+#choseCar-section{
+    padding-bottom: 160px;
+}
+.chooseCar__title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+}
+.chooseCar__text{
+    margin: 10px 0 40px 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #555555;
+}
+.chooseCar__cars{
+    text-align: center;
+}
+.chooseCar__btnGroups{
+    margin-bottom: 24px;
+}
+.chooseCar__btn{
+    padding: 17px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    border-radius: 100px;
+    border: 1.5px solid #E5E7EA;
+   
+
+}
+.choseBtn__active{
+    color: #FFFFFF;
+    background: #299764;
+}
+
+.chooseCar__cards{
+   margin-bottom: 15px;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+.chooseCar__itemas{
+    padding: 24px 30px;
+    background: #F5F5F5;
+    border-radius: 16px;
+    list-style: none;
+    text-align: left;
+
+    &:hover{
+        background: #299764;
+        border-radius: 16px;
+        transition: background .7s;
+    }
+    &:hover>* {
+       color: #FFFFFF;
+       transition: color .5s;
+    
+    }
+
+}
+.choseCard__title{
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+
+
+}
+.choseCard__itemas__text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #555555;
+}
+.choseCard__img{
+    max-width: 378px;
+    margin: 16px 0;
+    img{
+      width: 100%;
+    }
+     
+}
+.choseCard__boxText{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 24px;
+
+    &__text{
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+}
+.chooseCar__btnAll{
+    margin-top: 43px;
+    padding: 18px 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #299764;
+    border-radius: 100px;
+    border: none;
+}
+
+@media screen  and (max-width:800px){
+    .chooseCar__cards{
+        grid-template-columns:auto auto;
+        gap: 20px;
+    }
+}
+@media screen  and (max-width:576px){
+    .chooseCar__cards{
+        grid-template-columns:auto ;
+        gap: 20px;
+    }
+}
